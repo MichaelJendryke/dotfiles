@@ -1,0 +1,34 @@
+Host gitlab-runner2 82.165.183.30
+    HostName 82.165.183.30
+    IdentityFile ~/.ssh/IONOS.private
+    User root
+    port 22
+
+# 23M
+Host node1 62.113.194.100
+    Hostname 62.113.194.100
+    IdentityFile ~/.ssh/23mNode
+    User giadmin
+
+# 23M
+Host node2 62.113.194.101
+    Hostname 62.113.194.101
+    IdentityFile ~/.ssh/23mNode
+    User giadmin
+
+# IONOS
+Host temporary-server-1 212.227.9.122
+    Hostname 212.227.9.122
+    IdentityFile ~/.ssh/Temporary-Server-Key.private
+    User root	
+
+# IONOS
+Host temporary-server-2 85.215.101.222
+    Hostname 85.215.101.222
+    IdentityFile ~/.ssh/Temporary-Server-2-Key.private
+    User gi
+
+# GitLab.com
+Host gitlab.com
+  PreferredAuthentications publickey
+  IdentityFile ~/.ssh/gitlab
