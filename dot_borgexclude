@@ -1,0 +1,16 @@
+/home/mj/What/
+/home/mj/.Trash-1000/
+/home/mj/snap/
+/home/mj/.local/
+**.cache
+**/node_modules/
+/home/mj/.next/
+*.lock
+/home/mj/.npm/
+**/.idea/
+**/.git/
+**/.cargo/
+**/.rustup/
+**/target/debug/
+/home/mj/.wine/
+
