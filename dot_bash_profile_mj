@@ -18,6 +18,9 @@ export PASTE_TOOL=wl-paste
 export PATH="$PATH:/opt/nvim-linux64/bin"
 alias vim=nvim
 
+# EDITOR
+export EDITOR="code --wait"
+
 # Aliases
 alias lss='ls -lash --color=auto --group-directories-first'
 alias lsr='ls -R'
