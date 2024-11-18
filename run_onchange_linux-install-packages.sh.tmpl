@@ -1,0 +1,15 @@
+{{ if eq .chezmoi.os "linux" -}}
+#!/bin/bash
+
+# Update package list and upgrade existing packages
+sudo apt-get update -y && sudo apt-get upgrade -y
+
+# Install packages listed in .packages.linux.apt
+{{ range .packages.linux.apt -}}
+sudo apt-get install -y {{ . | quote }}
+{{ end -}}
+
+sudo apt-get autoremove -y
+
+{{ end -}}
+
