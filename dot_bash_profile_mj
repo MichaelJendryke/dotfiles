@@ -1,0 +1,50 @@
+# My profile settings
+echo "Setting my profile in ~/.bash_profile_mj"
+
+export HOME4TB='/mnt/80E2AA5AE2AA53E6/'
+
+# HISTORY
+shopt -s histappend
+unset HISTFILESIZE:
+export HISTSIZE=5000
+# ignore duplicate commands, ignore commands starting with a space
+export HISTCONTROL=ignoreboth:erasedups
+
+# Clipboard
+export CLIPBOARD_TOOL=wl-copy
+export PASTE_TOOL=wl-paste
+
+# nvim
+export PATH="$PATH:/opt/nvim-linux64/bin"
+alias vim=nvim
+
+# Aliases
+alias lss='ls -lash --color=auto --group-directories-first'
+alias lsr='ls -R'
+alias U="sudo apt update && sudo apt upgrade"
+
+# source <(kubectl completion bash)
+# export KUBE_EDITOR=nano
+
+# ZOXIDE (jump directories)
+eval "$(zoxide init bash)"
+
+# FZF (fuzzy file search)
+eval "$(fzf --bash)"
+
+# STARSHIP
+eval "$(starship init bash)"
+export STARSHIP_CONFIG=~/.config/starship/starship.toml
+
+# RUST/Cargo
+export PATH="$HOME/.cargo/bin:$PATH"
+
+# GO
+export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:$HOME/go/bin
+
+# DGGRID
+export PATH=$PATH:/home/mj/CODE/gh/DGGRID/build/src/apps/dggrid
+
+# DUCKDB
+export PATH=$PATH:/home/mj/CODE/gh/duckdb_cli/duckdb_cli-linux-amd64/duckdb
